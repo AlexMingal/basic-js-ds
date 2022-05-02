@@ -23,7 +23,8 @@ class BinarySearchTree {
     function newNode(node, data) {
       if (!node) return new Node(data);
       if (node.data === data) return node;
-      if (node.data > data) {
+      if (node.data > data) 
+      {
         node.left = newNode(node.left, data);
       } else {
         node.right = newNode(node.right, data);
